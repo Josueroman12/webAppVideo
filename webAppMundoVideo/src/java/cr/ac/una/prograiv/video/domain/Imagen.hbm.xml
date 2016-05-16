@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/05/2016 02:28:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.video.domain.Imagen" table="imagen" catalog="mundovideo" optimistic-lock="version">
+        <id name="pkIdImagen" type="java.lang.Integer">
+            <column name="PK_id_imagen" />
+            <generator class="identity" />
+        </id>
+        <property name="tipo" type="string">
+            <column name="tipo" length="45" not-null="true" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
